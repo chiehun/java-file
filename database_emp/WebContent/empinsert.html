@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Employee Insert</title>
+</head>
+
+<body>
+<h3>New Employee Insert</h3>
+<hr> <!-- 가로 구분선 만드는 Tag -->
+
+<form action="EMPServletInsert" method="post"> 
+	<table>
+		<tr>
+			<th>Division	</th><th>Required Input</th>
+		</tr>
+		
+		<tr>
+			<td>AGE		</td>
+			<td>
+			<input type="text" size="15" name="age" placeholder="정수 두자리" 
+			required="required" autofocus="autofocus" />
+			</td>
+		</tr>
+		
+		<tr>
+			<td>NAME		</td>
+			<td>
+			<input type="text" size="15" name="name" placeholder="영문 이니셜" 
+			required="required" />
+			</td>
+		</tr>
+		
+		<tr>	
+			<td>PHONE	</td>
+			<td>
+			<input type="text" size="15" name="phone" 
+			placeholder="예)010-0000-0000" required="required" />
+			</td>
+		</tr>
+		
+		<tr>	
+			<td>GENDER	</td>
+			<td>
+			<input type="text" size="15" name="gender" placeholder="M | F" 
+			required="required" />
+			</td>
+		</tr>
+		
+		<tr>	
+			<td>JOB		</td>
+			<td>
+			<input type="text" size="15" name="job" placeholder="직업 입력" 
+			required="required" />
+			</td>
+		</tr>
+		
+		<tr>	
+			<td>PAY		</td>
+			<td>
+			<input type="text" size="15" name="pay" placeholder="월급여 입력" 
+			required="required" />
+			</td>
+		</tr>
+		
+		<tr>	
+			<td>CODE		</td>
+			<td>
+			<input type="text" size="15" name="code" 
+			placeholder="국가코드 입력 예)KR" required="required" />
+			</td>
+		</tr>
+		
+		<tr>
+			<td><input type="submit" value="저장" /></td>
+			<td><input type="reset" value="취소" /></td>
+		</tr>

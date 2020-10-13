@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;jspmgrammer/WebContent/logsjp.jsp&apos; to &apos;log.jsp&apos;" description="Rename resource &apos;logsjp.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/logsjp.jsp" name="log.jsp" stamp="1596434928462" updateReferences="true"/>
+</session>

@@ -1,0 +1,70 @@
+#wrap {		/* 레이아웃 기본 사이즈 */
+	width: 1080px;
+	text-align: center;
+	margin: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	min-height: 923px;
+}
+
+#loginform {		/* 로그인 폼 중간 위치쯔음 배치 */
+	margin-top: 200px;
+	margin-left: 300px;
+}
+
+#b{	/* 글씨체 강조 후 폰트크기*/
+	font-size: 25pt;
+}
+
+#logo { /* 헤더 로고 설정 */
+	width: 971px;
+	margin: 60px 0 40px 0;
+}
+
+.btn {		/* 버튼 설정 */
+	font-family: "맑은 고딕";
+	width: 100px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #999999;
+	text-decoration: none;
+	text-align: center;
+	padding: 5px;
+	margin: 0 7px 7px 0px;
+}
+
+nav#sub_menu { 	/* 서브메뉴 왼쪽으로 위치 */
+	float: left;
+	margin-right: 10px;
+	font-family: "맑은 고딕";
+}
+
+nav#sub_menu ul li {
+	list-style-type: none;
+	margin-top: 10px;
+}
+
+nav#sub_menu a {
+	text-decoration: none;
+	color: #666;
+	border-bottom: 1px dotted #999;
+	display: block;
+	width: 100px;
+	height: 25px;
+	padding: 5px;
+}
+
+nav#sub_menu a:hover {
+	border-bottom: 1px solid black;
+}
+
+nav#sub_menu ul {
+	margin-left: -20px;
+}
+
+article { /* content 들은 이걸로 묶어줄거에요 */
+	min-height: 600px;
+}
+
+#search {
+	float: right;
+}

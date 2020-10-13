@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	
+
+	<bean id="defaultHandlerMapping"
+		class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" />
+	<bean name="/index.do"
+		class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+		<property name="viewName" value="list"></property>
+	</bean>
+	<bean id="boardDAO" class="board.dao.BoardDAO" />
+	
+	<bean name="/list.do"
+		class="board.controller.ListActionController">
+		<property name="dao">
+			<ref bean="boardDAO"/>
+		</property>
+	</bean>
+
+	<bean name="/writeui.do"
+		class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+	</bean>
+
+	<bean name="/write.do"
+		class="board.controller.WriteActionController">
+	</bean>
+
+	<bean name="/retrieve.do"
+		class="board.controller.RetrieveActionController">
+	</bean>
+
+	<bean name="/update.do"
+		class="board.controller.UpdateActionController">
+	</bean>
+
+	<bean name="/delete.do"
+		class="board.controller.DeleteActionController">
+	</bean>
+
+	<bean name="/search.do"
+		class="board.controller.SearchActionController">
+	</bean>
+
+	<bean id="viewResolover"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		
+<property name="viewClass" value="org-springframeork.web.servlet.view.internalResourceView"/>
+
+<property name="prixit" value ="/"/>
+<property name="suffix" value =".jsp"></property>
+
+	</bean>
+</beans>

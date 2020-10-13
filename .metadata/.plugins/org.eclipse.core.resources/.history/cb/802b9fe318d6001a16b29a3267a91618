@@ -1,0 +1,11 @@
+package com.hun.service;
+
+import com.hun.db.MemberDao;
+
+public class JoinService {
+
+	private MemberDao memberDao = new MemberDao();
+	
+	public void join(JoinRequest joinReq)
+
+}

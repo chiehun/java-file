@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<namecard>
+	<person>
+		<name>허광남</name>
+		<id>남자</id>
+		<email>kenu@email.com</email>
+		<phone>111-2222-3333</phone>
+	</person>
+	
+	<person>
+		<name>노재충</name>
+		<id>남자</id>
+		<email>suribada@email.com</email>
+		<phone>222-3333-4444</phone>
+	</person>
+	
+	<person>
+		<name>이선재</name>
+		<id>남자</id>
+		<email>hsboy@email.com</email>
+		<phone>333-4444-5555</phone>
+	</person>
+</namecard>

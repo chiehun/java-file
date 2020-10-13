@@ -1,0 +1,17 @@
+1598486513403	Delete element
+1598486549379	Delete element
+1598486568966	Delete element
+1598487204228	Delete element
+1598488307465	Move 'boardList.jsp' to 'board'
+1598488310656	Move 'boardWrite.jsp' to 'board'
+1598488313222	Move 'boardUpdate.jsp' to 'board'
+1598488315747	Move 'boradCheckPass.jsp' to 'board'
+1598488318540	Move 'boradView.jsp' to 'board'
+1598488320944	Move 'checkSuccess.jsp' to 'board'
+1598488323195	Move 'index' to 'board'
+1598488326662	Move 'index' to 'WebContent'
+1598491388963	Delete element
+1598507694643	Delete element
+1598512443916	Rename resource 'boradView.jsp'
+1598512452911	Rename resource 'boradCheckPass.jsp'
+1598516280832	Rename type 'BoardUpdateActionForm'

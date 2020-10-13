@@ -1,0 +1,17 @@
+package com.hun.service;
+
+import java.sql.Connection;
+
+import com.hun.db.MemberDao;
+
+public class JoinService {
+
+	private MemberDao memberDao = new MemberDao();
+
+	public void join(Service joinReq) {
+		Class.forName("com.mysql.jdbc.Driver")
+		Connection conn= null;
+		
+	}
+
+}

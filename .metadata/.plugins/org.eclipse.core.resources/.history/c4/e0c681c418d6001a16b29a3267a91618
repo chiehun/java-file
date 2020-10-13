@@ -1,0 +1,9 @@
+package com.hun.service;
+
+public class JoinService {
+
+	public JoinService() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

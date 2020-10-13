@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type= "text/javascript">
+function Goodlist(){
+	document.location="GoodsList";
+}
+</script>
+<title>상품 등록 화면</title>
+</head>
+<body>
+	<!-- ﻿2, 상품 등록 화면 (
+parameter 은 DTO의 멤버 변수와 동일
+할인금액,배송비는 기본 0 / 이 두개를 제외한 나머지는 필수 입력!!!
+상품번호, => input  text   
+상품정보, => input  text 
+상세 정보, => textarea
+상품수량, => input  number  min 1  max 10 step 1
+할인금액, => input  text
+배송비,  => input  text
+상품 가격 => input  text
+판매자  => input  text  
+-->
+	<h3>상품 등록 화면</h3>
+	<form action="GoodsEntry">
+		<table>
+			<tr>
+				<td>상품번호</td>
+				<td><input type="text" size="17" name="code"
+					required="required" /></td>
+			</tr>
+			<tr>
+				<td>상품정보</td>
+				<td><input type="text" size="50" name="product"
+					required="required" /></td>
+			</tr>
+			<tr>
+				<td>상세정보</td>
+				<td><textarea cols="52" rows="10" name="content"
+						required="required"></textarea></td>
+			</tr>
+			<tr>
+				<td>상품수량</td>
+				<td><input type="number" min="1" max="10" step="1" value="1"
+					name="quantity" required="required" /></td>
+			</tr>
+			<tr>
+				<td>할인금액</td>
+				<td><input type="text" size="17" name="discount" value="0" /></td>
+			</tr>
+			<tr>
+				<td>배송비</td>
+				<td><input type="text" size="17" name="delivery_change"
+					value="0" /></td>
+			</tr>
+			<tr>
+				<td>상품가격</td>
+				<td><input type="text" size="17" name="price"
+					required="required" /></td>
+			</tr>
+			<tr>
+				<td>판매자</td>
+				<td><input type="text" size="17" name="name"
+					required="required" /></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="상품목록가기" onclick="Goodlist()"/></td>
+				<td><input type="submit" value="상품등록" /> 
+				<input type="reset"	value="상품등록취소" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

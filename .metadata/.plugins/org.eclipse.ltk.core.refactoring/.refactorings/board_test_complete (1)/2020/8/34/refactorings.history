@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 elements to &apos;WebContent&apos;&#x0D;&#x0A;- Original project: &apos;board_test_complete (1)&apos;&#x0D;&#x0A;- Destination element: &apos;WebContent&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     boardModify.jsp&#x0D;&#x0A;     boardView.jsp&#x0D;&#x0A;     boardWrite.jsp&#x0D;&#x0A;     boardList.jsp" description="Copy files" element1="WebContent/boardModify.jsp" element2="WebContent/boardView.jsp" element3="WebContent/boardWrite.jsp" element4="WebContent/boardList.jsp" files="4" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1597736468175" target="/tags_action_tag_lg_cns_site/WebContent" units="0" version="1.0"/>
+</session>

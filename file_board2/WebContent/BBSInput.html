@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>파일형 게시판 글쓰기 - 입력 화면</title>
+        <script type="text/javascript">
+    		function postList(){
+    			document.location="BBSPostList.jsp";
+    		}
+    	</script>	
+    </head>
+    <body>
+        <h2>파일형 게시판 글쓰기 - 글입력 화면</h2>
+        <form action="BBSPostWrite.jsp" method="POST">
+            이름: <input type="text" name="NAME" required="required" autofocus /><br />
+            제목: <input type="text" name="TITLE" required="required" /><br />
+            <textarea cols="30" rows="5" name="CONTENT" required="required" ></textarea><br />
+            <input type="submit" value="저장" />
+            <input type="reset" value="취소" />
+        </form>
+        <input type="button" value="글목록" onclick="postList()">
+    </body>
+</html>

@@ -1,0 +1,45 @@
+DROP sequence  seqPollList;
+DROP TABLE  tblPollList;
+
+DROP TABLE  tblPollItem;
+
+
+CREATE SEQUENCE seqPollList
+start with 1
+increment by 1
+;
+
+CREATE TABLE tblPollList (
+	  num number NOT NULL ,
+	  question varchar2(100)  DEFAULT '' NOT NULL,
+	  sdate date DEFAULT NULL,
+	  edate date DEFAULT NULL,
+	  wdate date DEFAULT NULL,
+	  types number  DEFAULT 1 NOT NULL,
+	  active number DEFAULT 1,
+	  PRIMARY KEY (num)
+);
+
+
+CREATE TABLE tblPollItem (
+	  poll_list_num number NOT NULL,
+	  poll_item_num number DEFAULT 0 NOT NULL ,
+	  poll_item varchar2(50) DEFAULT '' NOT NULL ,
+	  poll_count number DEFAULT 0 NOT NULL,
+	  PRIMARY KEY (poll_list_num, poll_item_num)
+); 
+
+desc tblPollList;
+
+desc tblPollItem;
+
+select * from tblPollList;
+
+select * from tblPollItem;
+
+CREATE TABLE tblPollItem (
+	  listnum number,
+	  itemnum number,
+	  item varchar2(50),
+	  counts number
+); 

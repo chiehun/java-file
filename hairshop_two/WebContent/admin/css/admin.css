@@ -1,0 +1,157 @@
+table#detailLeft {
+	width: 400px;
+	margin-left : 85px;
+	text-align: center;
+	font: '맑은고딕';
+	line-height: 1.5;
+	border-collapse: collapse;
+	border-right: 3px solid #ccc;
+}
+
+table#detailLeft th {
+	font-size: 11pt;
+    font-weight: bold;
+    vertical-align: top;
+    color: #ffffff;
+    background: #9ea49b;
+    margin: 0px 10px;
+}
+
+table#detailRight {
+	width: 300px;
+	margin-left : 700px;
+	text-align: center;
+	font: '맑은고딕';
+	line-height: 1.5;
+	border-collapse: collapse;
+	border-top: 1px solid #ccc;
+}
+
+table#detailRight th {
+	font-size: 11pt;
+    font-weight: bold;
+    vertical-align: top;
+    color: #ffffff;
+    background: #9ea49b;
+    margin: 0px 10px;
+}
+
+table#detailLeft input{
+	text-align: center;
+}
+
+table#detailRight input{
+	text-align: center;
+}
+
+table#detailLeft td {
+	font-size: 10pt;
+    vertical-align: top;
+    line-height: 250%
+}
+
+table#detailRight td {
+	
+	font-size: 10pt;
+    vertical-align: top;
+    line-height: 250%
+}
+
+table#default {
+	width: 850px;
+	margin-top : 30px;
+	margin-left : 200px;
+	text-align: center;
+	font: '맑은고딕';
+	line-height: 1.5;
+	border-collapse: collapse;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+table#default thead th {
+	font-size: 11pt;
+    font-weight: bold;
+    vertical-align: top;
+    color: #ffffff;
+    background: #9ea49b;
+    margin: 0px 10px;
+}
+
+table#default tbody th {
+    padding: 10px;
+}
+
+table#default td {
+	
+	font-size: 10pt;
+    vertical-align: top;
+    line-height: 200%
+}
+
+#butt {  /*버튼*/
+  background:#61685e;
+  color:#fff;
+  border:none;
+  font-weight: bold;
+  position:relative;
+  height:25px;
+  cursor:pointer;
+  outline:none;
+}
+
+#idd {  /*버튼*/
+  background:#898f85;
+  color:#fff;
+  border:none;
+  font-weight: bold;
+  position:relative;
+  height:25px;
+  cursor:pointer;
+  outline:none;
+}
+/*---------------------------------------*/
+
+#wrap {		/* 레이아웃 기본 사이즈 */
+	width: 1080px;
+	text-align: center;
+	margin: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	min-height: 923px;
+}
+
+#loginform {		/* 로그인 폼 중간 위치쯔음 배치 */
+	margin-top: 200px;
+	margin-left: 300px;
+}
+
+#b{	/* 글씨체 강조 후 폰트크기*/
+	font-size: 25pt;
+}
+
+#logo { /* 헤더 로고 설정 */
+	width: 971px;
+	margin: 60px 0 40px 0;
+}
+
+.btn {		/* 버튼 설정 */
+	font-family: "맑은 고딕";
+	width: 100px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #999999;
+	text-decoration: none;
+	text-align: center;
+	padding: 5px;
+	margin: 0 7px 7px 0px;
+}
+
+article { /* content 들은 이걸로 묶어줄거에요 */
+	min-height: 600px;
+}
+
+#search {
+	float: right;
+}
+
+

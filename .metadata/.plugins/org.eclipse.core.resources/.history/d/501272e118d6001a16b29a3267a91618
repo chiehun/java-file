@@ -1,0 +1,10 @@
+package com.hun.service;
+
+public class JoinService {
+
+	private MemberDao memberDao = new MemberDao();
+	public JoinService() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

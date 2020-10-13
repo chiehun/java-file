@@ -1,0 +1,47 @@
+package com.hun.servlet;
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.hun.dao.BoardDAO;
+import com.hun.dto.BoardModel;
+
+/**
+ * Servlet implementation class BoardListServlet
+ */
+@WebServlet("/boardlist")
+public class BoardListServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public BoardListServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	
+		BoardDAO dao = new BoardDAO();
+		dao.connect();
+		dao.close();
+		
+		request.setAttribute("result", dao.selectList()); 
+		RequestDispatcher rd = request.getRequestDispatcher("boardList");
+		rd.forward(request, response);
+		System.out.println(dao.selectList());
+		
+	}
+
+}

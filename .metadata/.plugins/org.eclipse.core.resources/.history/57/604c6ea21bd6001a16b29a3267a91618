@@ -1,0 +1,25 @@
+package com.hun.service;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+import com.hun.db.MemberDao;
+
+public class JoinService {
+
+	private MemberDao memberDao = new MemberDao();
+
+	public void join(Service joinReq) {
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection conn= null;
+			conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/test_db","root","1234");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+}
